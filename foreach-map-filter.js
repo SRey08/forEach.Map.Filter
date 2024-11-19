@@ -7,6 +7,11 @@ Examples:
 
 */
 function doubleValues(arr){
+    let newArr =[];
+    arr.forEach(function(val){
+        newArr.push(val * 2)
+    });
+    return newArr ;
     
 }
 
@@ -19,6 +24,14 @@ Examples:
 
 */
 function onlyEvenValues(arr){
+    let newArr =[];
+    arr.forEach(function(val){
+        if (val % 2 === 0){
+            newArr.push(val);
+        }
+    });
+
+    return newArr;
     
 }
 
