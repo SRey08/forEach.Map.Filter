@@ -44,6 +44,12 @@ Examples:
 
 */
 function showFirstAndLast(arr){
+    let newArr =[];
+    arr.forEach(function (val){
+        newArr.push(val[0] + val[val.length - 1])
+    });
+
+    return newArr;
     
 }
 
@@ -57,7 +63,10 @@ Examples:
 
 */
 function addKeyAndValue(arr,key,value){
-    
+    arr.forEach(function(val){
+        val[key]=value;
+    });
+    return arr;
 }
 
 /*
